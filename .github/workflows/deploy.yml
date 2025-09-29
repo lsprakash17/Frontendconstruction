@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
       - name: Setup Node.js
@@ -22,7 +22,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Disable CI mode to allow ESLint warnings
+      - name: Disable CI mode to allow warnings
         run: echo "CI=false" >> $GITHUB_ENV
 
       - name: Build React app
@@ -33,3 +33,4 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build
+          force_orphan: true       # ✅ Forces creation of a new orphan branch if needed
