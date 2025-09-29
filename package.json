@@ -2,7 +2,7 @@
   "name": "landingpage-react-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lsprakash17.github.io/Frontendconstruction",
+    "homepage": "https://lsprakash17.github.io/Frontendconstruction",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
