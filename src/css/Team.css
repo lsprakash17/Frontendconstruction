@@ -1,0 +1,6 @@
+.team-img {
+  width: 100%;
+  aspect-ratio: 1/1;  /* makes it a square */
+  object-fit: cover;  /* fills nicely */
+  border-radius: 8px;
+}
