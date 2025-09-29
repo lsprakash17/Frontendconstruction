@@ -17,17 +17,18 @@ Madhushudan H R, Owner of HSR hotels pvt ltd.
 I have been in hotel field around 25 years managing 3 major restaurant (udupi ruchi) and 5 hotel 
           </p>
         </div>
-<div className="flex flex-wrap justify-center gap-4">
+<div className="flex flex-col items-center gap-6">
   {props.data?.map((d, i) => (
-    <div key={`${d.name}-${i}`} className="w-64">
-      <img src={d.img} alt={d.name} className="team-img" />
-      <div className="caption text-center">
-        <h4>{d.name}</h4>
-        <p>{d.job}</p>
+    <div key={`${d.name}-${i}`} className="w-full max-w-2xl">
+      <img src={d.img} alt={d.name} className="w-full h-auto team-img" />
+      <div className="caption text-center mt-2">
+        <h4 className="text-xl font-semibold">{d.name}</h4>
+        <p className="text-gray-600">{d.job}</p>
       </div>
     </div>
   ))}
 </div>
+
 
 
       </div>
